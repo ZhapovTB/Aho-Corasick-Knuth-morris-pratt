@@ -82,7 +82,7 @@ void algo_Knuth_Morris_Pratt(std::vector<Node> list, std::vector<std::string> te
     end = clock();
     int time = end - start;
   
-    file << "Время: " << time/ CLOCKS_PER_SEC << "сек.";
+    file << "Время: " << ((float)time)/ CLOCKS_PER_SEC << "сек.";
 }
 
 #endif // AHO
