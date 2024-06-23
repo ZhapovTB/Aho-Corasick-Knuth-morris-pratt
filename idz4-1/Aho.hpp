@@ -174,7 +174,7 @@ void algo_aho_korasik(std::vector<Node> people_list, std::vector<std::string> te
 		}
 
 		if (tem_of_name_ent >= num_of_entries_name && tem_of_car_ent >= num_of_entries_car) {
-			file << (*node).fio << " " << (*node).car.brand <<" "<< (*node).car.model << " " << std::endl;
+			file << (*node).fio << " " << (*node).car.brand <<" "<< (*node).car.model << " " << (*node).ch << std::endl;
 		}
 		tem_of_name_ent = 0;
 		tem_of_car_ent = 0;

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "FileEdit.hpp"
 #include "Aho.hpp"
+#include "KMP.hpp"
 
 int main() {
 	std::vector <Node> container;
@@ -20,18 +21,21 @@ int main() {
 
 
 	fileParser(test, container);
-
+	
 	std::cout << "Шаблоны имени" << std::endl;
 	request_temps(temps_name);
 	std::cout << "Сколько из них должно встретиться ? " << std::endl;
 	std::cin >> num_of_entries_name;
 
-	std::cout << "Шаблоны имени" << std::endl;
+	std::cout << "Шаблоны бренда машины" << std::endl;
 	request_temps(temps_car);
 	std::cout << "Сколько из них должно встретиться ? " << std::endl;
 	std::cin >> num_of_entries_car;
 
 	algo_aho_korasik(container, temps_name, temps_car, num_of_entries_name, num_of_entries_car, akfile);
+	algo_Knuth_Morris_Pratt(container, temps_name, temps_car, num_of_entries_name, num_of_entries_car, kmpfile);
+
+
 
 
 	print(container);

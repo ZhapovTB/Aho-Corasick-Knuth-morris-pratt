@@ -1,4 +1,2 @@
-Morozov Igor Ivanovich  BMW X5 
-Tikhonov Sofia Igorevna  BMW 3 Series 
-Alexeev Igor Andreevich  BMW 5 Series 
-0.002
+Fedorov Denis Viktorovich  Hyundai Tucson 17
+0.005сек.
